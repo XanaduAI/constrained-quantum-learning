@@ -1,4 +1,6 @@
-# Quantum state learning and gate synthesis
+# Near-deterministic production of universal quantum photonic gates enhanced by machine learning
+
+*Using machine learning to train a Gaussian quantum circuit with PNRs to produce cubic phase resource states with high fidelity and probability.*
 
 
 This repository contains the source code used to produce the results presented in *"Near-deterministic production of universal quantum photonic gates enhanced by machine learning"* [arXiv:1809.04680](https://arxiv.org/abs/1809.04680).
