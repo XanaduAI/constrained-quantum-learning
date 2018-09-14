@@ -1,6 +1,6 @@
 # Near-deterministic production of universal quantum photonic gates enhanced by machine learning
 
-*Using machine learning to train a Gaussian quantum circuit with PNRs to produce cubic phase resource states with high fidelity and probability.*
+### Using machine learning to train a Gaussian quantum circuit with PNRs to produce cubic phase resource states with high fidelity and probability.
 
 
 This repository contains the source code used to produce the results presented in *"Near-deterministic production of universal quantum photonic gates enhanced by machine learning"* [arXiv:1809.04680](https://arxiv.org/abs/1809.04680).
@@ -20,7 +20,7 @@ To construct and optimize the constrained variational quantum circuits, these sc
 
 ## Authors
 
-Juan Miguel Arrazola, Thomas R. Bromley, Josh Izaac, Casey R. Myers, Kamil Brádler, and Nathan Killoran.
+Krishna Kumar Sabapathy, Haoyu Qi, Josh Izaac, and Christian Weedbrook.
 
 If you are doing any research using this source code and Strawberry Fields, please cite the following two papers:
 
