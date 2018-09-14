@@ -1,4 +1,4 @@
-# Near-deterministic production of universal quantum photonic gates enhanced by machine learning
+# Constrained quantum learning
 
 ### Using machine learning to train a Gaussian quantum circuit with PNRs to produce cubic phase resource states with high fidelity and probability.
 
