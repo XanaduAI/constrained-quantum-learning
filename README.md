@@ -11,7 +11,7 @@ The following two scripts perform a constrained variational quantum circuit opti
 
 * `two_mode.py`: a Python script to generate the results of the two-mode gadget architecture presented in the paper. Here, a two mode squeezed displaced state is incident on a beamsplitter, with the first mode measured by a photon-number resolving detector.
 
-* `gate_synthesis.py`: a Python script to generate the results of the three-mode gadget architecture presented in the paper. Here, a three mode squeezed displaced state is incident on an interferometer consisting of three beamsplitters, with the first and second modes measured by photon-number resolving detectors.
+* `three_mode.py`: a Python script to generate the results of the three-mode gadget architecture presented in the paper. Here, a three mode squeezed displaced state is incident on an interferometer consisting of three beamsplitters, with the first and second modes measured by photon-number resolving detectors.
 
 
 ## Requirements
