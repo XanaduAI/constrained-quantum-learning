@@ -18,6 +18,8 @@ The following two scripts perform a constrained variational quantum circuit opti
 
 To construct and optimize the constrained variational quantum circuits, these scripts use the Fock backend of [Strawberry Fields](https://github.com/XanaduAI/strawberryfields). In addition, SciPy is required for use of the global Basin Hopping optimization method, as well as the local BFGS optimization method.
 
+**Due to subsequent interface upgrades, these scripts will work only with Strawberry Fields version <= 0.10.0.**
+
 ## Authors
 
 Krishna Kumar Sabapathy, Haoyu Qi, Josh Izaac, and Christian Weedbrook.
@@ -26,7 +28,7 @@ If you are doing any research using this source code and Strawberry Fields, plea
 
 > Krishna Kumar Sabapathy, Haoyu Qi, Josh Izaac, and Christian Weedbrook.  Near-deterministic production of universal quantum photonic gates enhanced by machine learning. arXiv, 2018. [arXiv:1809.04680](https://arxiv.org/abs/1809.04680)
 
-> Nathan Killoran, Josh Izaac, Nicolás Quesada, Ville Bergholm, Matthew Amy, and Christian Weedbrook. Strawberry Fields: A Software Platform for Photonic Quantum Computing. arXiv, 2018. [arXiv:1804.03159](https://arxiv.org/abs/1804.03159)
+> Nathan Killoran, Josh Izaac, Nicolás Quesada, Ville Bergholm, Matthew Amy, and Christian Weedbrook. Strawberry Fields: A Software Platform for Photonic Quantum Computing. arXiv, 2018. [Quantum, 3, 129](https://quantum-journal.org/papers/q-2019-03-11-129/) (2019).
 
 ## License
 
