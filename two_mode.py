@@ -93,21 +93,23 @@ def circuit(params, a, m, cutoff):
     sq0_r, sq0_phi, disp0_r, disp0_phi, sq1_r, sq1_phi, disp1_r, disp1_phi, theta, phi = params
 
     # quantum circuit prior to entering the beamsplitter
-    eng1, q1 = sf.Engine(2)
-    with eng1:
+    prog1 = sf.Program(2)
+    with prog1.context as q1:
         Sgate(sq0_r, sq0_phi) | q1[0]
         Dgate(disp0_r, disp0_phi) | q1[0]
         Sgate(sq1_r, sq1_phi) | q1[1]
         Dgate(disp1_r, disp1_phi) | q1[1]
 
-    stateIn = eng1.run('fock', cutoff_dim=cutoff)
+    eng = sf.Engine("fock", backend_options={"cutoff_dim": cutoff})
+    stateIn = eng.run(prog1).state
     normIn = np.abs(stateIn.trace())
 
     # norm of output state and probability
-    with eng1:
+    prog_BS = sf.Program(2)
+    with prog_BS.context as q1:
         BSgate(theta, phi) | (q1[0], q1[1])
 
-    stateOut = eng1.run('fock', cutoff_dim=cutoff)
+    stateOut = eng.run(prog_BS).state
     normOut = np.abs(stateOut.trace())
     rho = stateOut.dm()
 
